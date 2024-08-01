@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 10px;
+    font-family: 'Poppins' , sans-serif;
+}
+body{
+    background-color: black;
+}
+a{
+    text-decoration: none; /*remove underline*/
+    color: white;
+    font-size: 1.5rem; /*1.5xHTML font size*/
+    font-weight: 400;
+    line-height: 24px;
+}
+header{
+    display: flex; /*to allow flexable allignment*/
+    flex-direction: column; /*Header content will be alligned vertically*/
+    justify-content: space-between; /*Space distribution between components*/
+    padding: 10px 0 10px 13%;
+    width: 29%;
+    height: 100%;
+    position: fixed; /*fixed position while scrolling*/
+}
+.nav-links{
+    display: flex;
+    flex-direction: column; /*Header content will be alligned vertically*/
+    justify-content: space-between; /*Space distribution between components*/
+    width: 100% ;
+    height: 800px;
+
+}
+
+.nav-links a {
+    display: flex;
+    align-items: center; /*to make components centerally alligned*/
+    font-size: 2rem;
+    padding: 8px 25px 8px 8px;
+    width: fit-content; /*editing on content size only*/
+}
+.nav-links i {
+    font-size: 3rem;
+    margin-right: 15px;
+    margin-top: 5px;
+}
+/*hover effect*/
+.nav-links a:hover {
+    background-color: rgb(47, 51, 54);
+    border-radius: 9999px;
+}
+.nav-links a:first-child{
+    /*first nav link childe*/
+    padding: 8px 8px;
+    
+}
+.nav-links a:first-child i{
+    margin: 0;
+}
+.tweetbtn{
+    background-color: rgb(29, 155, 240);
+    color:white;
+    width: 90%;
+    height: 55px;
+    border-radius: 9999px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size:1.7rem;
+    font-weight: 700;
+    border: 1px solid black;
+    transition-duration: 0.2;
+    text-align: center;
+    padding: 15px 32px;
+    
+}
+.tweetbtn:hover{
+    background-color: rgba(29, 155, 240 , 0.9);
+}
+
+.main-acc {
+    width: 100%;
+    height: 25.6%;
+    padding-top: 50px;
+    
+}
+.main-acc a {
+    display: flex ; 
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 10px 8px 15px;
+    margin-right: 10px;
+    width: fit-content;
+
+}
+.profile_photo{
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+
+}
+.account {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-basis: 70%;
+    margin-left: 10px;
+    font-size: 1.5rem;
+    line-height: 20px;
+    margin-right: 20px;
+    
+}
+.name{
+    font-weight: 600;
+}
+.accTag{
+    color: rgb(110,118,125);
+}
+.main-acc a:hover {
+    background-color: rgb(47, 51, 54);
+    border-radius: 9999px;
+}
+main{
+    width: 71%;
+    height: 100%;
+    margin-left: 29%;
+}
+.main_cont
+{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+}
+.main_feed{
+   width: 50%;
+   border-left: 1px solid rgb(47,51,54);
+   border-right: 1px solid rgb(47,51,54);
+}
+.tophead {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    position: sticky; /*static while scroll*/
+    top: 0;
+    border-bottom: 1px solid rgb(47,51,54);
+    background-color: black;
+}
+.tophead a {
+  width: 50%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: rgb(50, 53, 56);;
+  font-size: 1.5rem;
+}
+.for_you {
+    font-weight: 500;
+    color: white;
+    border-bottom: 2px solid rgb(29, 155, 240); 
+}
+.tweet_box{
+    display: flex;
+    flex-direction: row;
+    width : 100% ;
+    height: 120px;
+    padding: 4px 16px;
+    border-bottom: 1px solid rgb(47,51,54);
+
+}
+.tweet_box .profile_photo {
+    width: 48px;
+    height: 48px;
+    cursor: pointer ;
+}
+.input_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-top: 4px;
+    width: 100%;
+    margin-left: 12px;
+    
+}
+.posting{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+}
+.posting ul{
+    display: flex;
+    list-style: none;
+
+}
+.input_box input {
+    width: 100%;
+    height: 24px;
+    background-color: black;
+    font-size: 2rem;
+    border: none;
+    color: white;
+    outline: none;
+}
+.posting ul li {
+    margin-right: 12px;
+    color: #1c88d2;
+    cursor: pointer;
+}
+.posting .tweetbtn {
+    width: 73px;
+    height: 50px;
+    margin-top: 0;
+    font-size:1.5rem;
+    font-weight:400;
+    padding: 15px 10px;
+    opacity: 0.7;
+}
+.tweets{
+    display: flex;
+    width : 100% ; 
+    min-height: 100px;
+    padding: 12px 16px 0px 16px;
+    border-bottom: 1px solid rgb(47,51,54);
+    cursor: pointer;
+}
+.tweet_content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 12px;
+    margin-bottom: 15px;
+}
+.tweet_content i {
+    color : rgb(47,51,54);
+    font-size: 2rem;
+}
+.tweeter_detalis{
+    display: flex ; 
+    align-items: flex-start;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+}
+.tweeter_detalis span {
+    font-weight: 300;
+    color : rgb(47,51,54);
+    
+    margin-left: 5px;
+}
+.tweeter_detalis i {
+    color: #1c88d2;
+}
+.tweet_text p {
+    font-size: 1.5rem;
+    font-weight: 700;
+    width: 100%;
+    color: white;
+}
+.tweet_icons{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 15px;
+    padding-right:50px ;
+}
+.m3ml{
+    width: 100%;
+}
+.side_feed{
+    display: flex;
+    flex-direction: column;
+    
+}
+.search_box {
+    background-color:rgb(47,51,54); 
+    border : 1px solid rgb(47,51,54); 
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px 20px;
+    width: 60%;
+    height: 60px;
+}
+.search_box input {
+    background-color:rgb(47,51,54); 
+    color: rgb(61, 65, 68);
+    font-size: 2rem;
+    border: none;
+    outline: none;
+    width: 90%;
+    margin-right: 20px;
+    margin-left: 10px;
+}
+.search_box i{
+    color: rgb(61, 65, 68);
+    font-size: 2rem;
+    font-weight: 2000;
+    margin-left: 10px;
+}
+.premium{
+    width: 60%;
+    height:200px;
+    margin: 30px 10px 20px 20px;
+    border: 1px solid rgb(47,51,54);
+    border-radius: 10px;  
+   
+    
+}
+.premium .tweetbtn {
+    width: 90px;
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size:1.5rem;
+    font-weight:400;
+    padding: 15px 10px;
+    
+}
+.premium p {
+    color: white;
+}
+.head {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 10px 10px;
+    
+}
+.subcontent{
+    font-size: 1.5rem;
+    margin: 10px 10px;
+}
+.trends{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height:200px;
+    margin: 30px 10px 20px 20px;
+    border: 1px solid rgb(47,51,54);
+    border-radius: 10px;  
+}
+.trends p {
+    color: white;
+    margin-left: 10px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+.who_to_follow{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height:400px;
+    margin: 30px 10px 20px 20px;
+    border: 1px solid rgb(47,51,54);
+    border-radius: 10px;  
+}
+.follow_box{
+    width: 100%;
+    height: 10px;
+    padding-top: 10px;
+}
+.follow_box a{
+    display: flex ; 
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 10px 8px 15px;
+    margin-right: 10px;
+    width: fit-content;
+}
+.follow_box .tweetbtn {
+    width:150px;
+    height: 49px;
+    margin-top: 0;
+    font-size:1.4rem;
+    font-weight:400;
+    padding: 15px 10px;
+    color: black;
+    font-weight: 700;
+    background-color: white;
+   
+}
+.follow_box a:hover{
+    background-color: rgb(58, 62, 66);
+}
+.who_to_follow p {
+    color: white;
+    margin-left: 10px;
+    margin-top: 5px;
+    cursor: pointer;
+}
